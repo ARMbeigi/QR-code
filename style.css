@@ -1,0 +1,90 @@
+ @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Fraunces:opsz,wght@9..144,700&family=Inter&family=Karla&family=Kumbh+Sans:wght@400;700&family=Lalezar&family=Lexend+Deca&family=Montserrat:wght@500&family=Noto+Sans+Arabic&family=Outfit&family=Poppins&family=Roboto&display=swap');
+
+:root{
+  /* COLOR */
+  --White: hsl(0, 0%, 100%);
+  --LightGray: hsl(212, 45%, 89%);
+  --GrayishBlue: hsl(220, 15%, 55%);
+  --DarkBlue: hsl(218, 44%, 22%);
+
+  /* FONT-FAMILY */
+  --fontOUTFIT: "Outfit", sans-serif;
+}
+
+*{
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: var(--LightGray);
+  font-family: var(--fontOUTFIT);
+  margin: 1.25rem;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container{
+  background: var(--White);
+  width: 20rem;
+  padding: .938rem;
+  border-radius: 20px;
+  text-align: center;
+}
+
+img{
+  height: 18rem;
+  width: 100%;
+  border-radius: .625rem;
+}
+
+.head{
+  margin-bottom: .625rem;
+}
+
+.paragraph{
+  color: var(--GrayishBlue);
+  font-size: 0.938rem;
+  padding: 0 1rem;
+  font-weight: 500;
+}
+
+/* ATTRIBUTION */
+.attribution{
+  position: fixed;
+  bottom: .625rem;
+  
+}
+
+.attribution a{
+cursor: pointer;
+}
+
+/* RESPONSIVE */
+@media (max-width: 365px) {
+  body{
+    padding: .625rem;
+    margin: .625rem;
+  }
+
+  .container{
+    width: 100%;
+  }
+
+  img{
+    width: 100%;
+    height: 100%;
+  }
+
+  .head{
+    font-size: 1.25rem;
+  }
+
+  .paragraph{
+    padding: 0 .5rem;
+  }
+}
